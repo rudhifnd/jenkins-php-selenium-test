@@ -5,6 +5,6 @@ docker run -d -p 80:80 --name my-apache-php-app -v C:\Users\Rudhi\Downloads\jenk
 sleep 1
 set +x
 
-echo 'Now...'
+echo 'Now....'
 echo 'Visit http://localhost to see your PHP application in action.'
 
