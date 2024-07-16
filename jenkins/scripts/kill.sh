@@ -1,4 +1,4 @@
-#!/usr/bin/env shq
+#!/usr/bin/env sh
 
 set -x
 docker kill my-apache-php-app
