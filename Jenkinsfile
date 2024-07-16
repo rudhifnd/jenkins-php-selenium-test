@@ -12,12 +12,7 @@ pipeline {
 					}
 				}
 				stage('Headless Browser Test') {
-					agent {
-						docker {
-							image 'jenkins-blueocean' 
-							args '-v /root/.m2:/root/.m2' 
-						}
-					}
+					agent any
 					steps {
 						sh 'mvn -B -DskipTests clean package'
 						sh 'mvn test'
